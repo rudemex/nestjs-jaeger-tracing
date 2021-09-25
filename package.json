@@ -1,7 +1,7 @@
 {
-  "name": "nestjs-package-starter",
-  "version": "1.0.3",
-  "description": "NestJS npm package starter",
+  "name": "nestjs-jaeger-tracing",
+  "version": "0.0.1",
+  "description": "NestJS jaeger tracing",
   "author": {
     "name": "Maximiliano \"Mex\" Delgado",
     "email": "mdelgado@tresdoce.com.ar",
@@ -18,13 +18,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rudemex/nestjs-package-starter.git"
+    "url": "git+https://github.com/rudemex/nestjs-jaeger-tracing.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rudemex/nestjs-package-starter/issues"
+    "url": "https://github.com/rudemex/nestjs-jaeger-tracing/issues"
   },
-  "homepage": "https://github.com/rudemex/nestjs-package-starter#readme",
+  "homepage": "https://github.com/rudemex/nestjs-jaeger-tracing#readme",
   "scripts": {
     "clean": "shx rm -rf pkg",
     "prebuild": "npm run clean",
