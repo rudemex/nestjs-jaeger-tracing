@@ -35,8 +35,7 @@ jobs:
         run: npm install
       - name: "GH context"
         run: |
-          echo ${{ github.event.repository.owner.name }}
-          echo ${{ github.event.repository.name }}
+          echo ${{ github.event.repository }}
       - name: "🔦 Lint"
         run: npm run lint
       - name: "🔨 Build"
