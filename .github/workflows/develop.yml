@@ -34,7 +34,10 @@ jobs:
       #- name: "📦 Install Dependencies"
       #  run: npm install
       - name: "GH context"
-        run: echo ${{ github }}
+        run: |
+          echo ${{ github.repository }}
+          echo ${{ github.actor }}
+          echo ${{ github.event.repository.name }}
       #- name: "🔦 Lint"
       #  run: npm run lint
       #- name: "🔨 Build"
