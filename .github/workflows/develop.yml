@@ -33,9 +33,6 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
       - name: "📦 Install Dependencies"
         run: npm install
-      - name: "GH context"
-        run: |
-          echo ${{ toJson(github.event.repository) }}
       - name: "🔦 Lint"
         run: npm run lint
       - name: "🔨 Build"
