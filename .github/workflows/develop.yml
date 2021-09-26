@@ -35,11 +35,8 @@ jobs:
       #  run: npm install
       - name: "GH context"
         run: |
-          echo 1 ${{ toJSON(github) }}
-          echo 2 ${{ toJSON(github.event) }}
-          echo 3 ${{ github.repository }}
-          echo 4 ${{ github.actor }}
-          echo 5 ${{ github.event.repository.name }}
+          echo ${{ github.event.owner.name }}
+          echo ${{ github.event.repository.name }}
       #- name: "🔦 Lint"
       #  run: npm run lint
       #- name: "🔨 Build"
